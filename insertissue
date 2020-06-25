@@ -1,0 +1,2 @@
+#!/bin/sh
+curl -v -X POST -H "Content-Type: application/json" localhost:8080/issue -d "{\"name\": \"Fred Flintstone\",\"email\":\"fflintstone@gmail.com\",\"description\":\"The server was slow\"}"

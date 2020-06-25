@@ -1,0 +1,6 @@
+#!/bin/bash
+docker run --rm --name weatherdb -p 5432:5432 -e POSTGRES_PASSWORD=password -d postgres:9.6.18
+export DATABASE_USERNAME=postgres
+export DATABASE_PASSWORD=password
+sbt run
+docker stop weatherdb
